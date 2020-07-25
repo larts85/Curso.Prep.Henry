@@ -1,0 +1,16 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Objetos:
+Los objetos contenedores de información, la cual se almacena en forma de pares de datos, nombre con su valor asignado. Dicho contenido (argumento y su valor) puede a su vez ser una matriz de datos, una variable o cualquier otro tipo de dato anteriormente visto; y se solicitará mas tarde de diferentes maneras.
+
+Propiedades:
+Es la relación entre ese par de datos (nombre - valor) dentro del objeto.
+
+Métodos:
+Son las propiedades dentro de los objetos que contienen como valor
+
+
+Bucle for…in:
+Es una orden de inspección 'for' específica para evaluar de forma repetitiva las propiedades dentro de los objetos.
+
+Notación de puntos vs notación de corchetes:

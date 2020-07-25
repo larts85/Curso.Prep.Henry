@@ -1,0 +1,4 @@
+For: Es una orden o instrución de calculo que se utiliza para hacer tareas repetitivas dentro de un rango de valores determinados.
+&&: Realiza una comparacion de dos valores, estableciendo si el resultado es verdadero o falso. Donde un resultado verdadero está dado solo si ambos valores lo son. Y será falso siempre que uno de ellos al menos lo sea.
+||: Realiza una comparacion de dos valores, estableciendo si el resultado es verdadero o falso. Donde un resultado falso será dado solamente si ambos valores lo son. Y será verdadero siempre que uno de ellos al menos lo sea.
+!: Es una instrución dentro de la operacion que invierte el sentido de lo que se expresa y que altera la veracidad o falsedad del resultado.

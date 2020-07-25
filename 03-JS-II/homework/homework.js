@@ -92,7 +92,7 @@ function esPrimo(numero) {
   if(numero < 2 || numero == null){
     return false;
   }
-  for(var i = 2;i < numero - 1;  i++){
+  for(var i = 2;i < numero;  i++){
        if (numero % i === 0){
        return false;
       } 

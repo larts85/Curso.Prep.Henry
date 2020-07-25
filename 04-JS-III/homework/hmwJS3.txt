@@ -1,1 +1,1 @@
-Los arrays son variables que a su vez contienen un listado de elementos ordenados, para utilizarlos segun nuestras nececidades.
+Los ARRAYS son variables que a su vez contienen un listado de elementos ordenados, para utilizarlos segun nuestras nececidades.
