@@ -41,6 +41,7 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
 return objetoMisterioso.numeroMisterioso * 5
 }
 
+// PORQUE NO SE PUEDE USAR EL DOT NOTACION EN ESTE CASO??
 function eliminarPropiedad(objeto, propiedad) {
   // Elimina la propiedad "propiedad" de "objeto"
   // Devuelve el objeto
@@ -61,6 +62,7 @@ var objeto = {
 return objeto;
 }
 
+//COMO SE PUEDE ACCEDER/INVOCAR/BORRAR AL CONTENIDO DENTRO DE LA PROPIEDAD?? 
 function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
@@ -69,7 +71,7 @@ function tieneEmail(usuario) {
   else return false;
 }
 
-
+// LA CONSIGNA ES AMBIGUA PARA UNA RESPUESTA TAN SIMPLE
 function tienePropiedad(objeto, propiedad) {
   // Devuelve "true" si el objeto tiene el valor del argumento "propiedad"
   // "propiedad" es un string
@@ -92,6 +94,7 @@ function verificarPassword(usuario, password) {
   else return false;
 }
 
+//PORQUÉ NO ME PERMITE USAR OTRA PROPIEDAD DIFERENTE A PASSWORD?
 function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
@@ -105,8 +108,7 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // // Tu código:
-  var arreglo = [''];
-  usuario.amigos = arreglo.push(nuevoAmigo);
+  usuario.amigos.push(nuevoAmigo);
   return usuario;
 }
 
@@ -116,6 +118,10 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  for(var i= 0; i<usuarios.length; i++){
+    usuarios[i].esPremium = true;
+  }
+  return usuarios;
 }
 
 function sumarLikesDeUsuario(usuario) {
@@ -125,8 +131,14 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+  var suma = 0;
+  for(var i=0; i<usuario.posts.length; i++){
+    suma = suma + usuario.posts[i].likes;
+  }
+  return suma;
 }
 
+//PORQUE NO PUEDO DEJAR UNA PROPIEDAD VACÍA SIN COMILLAS??
 function agregarMetodoCalculoDescuento(producto) {
   // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
   // Este método debe multiplicar el "precio" del "producto" ("producto.precio" o "producto[precio]") y "porcentajeDeDescuento" para obtener el descuento
@@ -137,7 +149,10 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-
+  producto.calcularPrecioDescuento = function() {
+    return this.precio - ( this.precio * this.porcentajeDeDescuento );
+  };
+  return producto;
 }
 
 // No modificar nada debajo de esta línea
