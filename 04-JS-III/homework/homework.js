@@ -16,8 +16,7 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  var array = [1, 2, 3, 4, 5]
-  return array.length
+  return array.length;
 }
 
 function incrementarPorUno(array) {
@@ -25,11 +24,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var Arraymas1 = [];
-  for(var elemento = 0; elemento < array.length; elemento++){
-     Arraymas1[elemento] = array[elemento] + 1;
+  var ArrayiMas1 = [];
+  for(var i = 0; i < array.length; i++){
+     ArrayiMas1[i] = array[i] + 1;
   }
-  return Arraymas1;
+  return ArrayiMas1;
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -45,8 +44,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  array.unshift(elemento)
-     return array
+  array.unshift(elemento);
+     return array;
 }
 
 function dePalabrasAFrase(palabras) {
@@ -55,7 +54,11 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return (palabras[0] + ' ' + palabras[1])
+  var cadena = ''
+  for(var i=0; i<palabras.length-1; i++){
+    cadena += palabras[i] + ' ';
+  };
+  return (cadena + palabras[palabras.length-1]);
 }
 
 function arrayContiene(array, elemento) {
@@ -80,16 +83,12 @@ function agregarNumeros(numeros) {
   }
   return suma;
 }
-agregarNumeros(numeros);
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  for (var i = 0; i < array.length; i++){
-    resultadosTest += array[i] / array.length;
-  }
-  return resultadosTest;
+  return agregarNumeros(resultadosTest) / resultadosTest.length;
 }
 
 function numeroMasGrande(numeros) {
@@ -119,7 +118,6 @@ for(var i = 1; i < arguments.length; i++){
 } 
   return producto;
 }
-multiplicarArgumentos(1,2,3,6,1);
 
 
 // No modificar nada debajo de esta línea
