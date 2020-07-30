@@ -20,7 +20,8 @@ function forEach(array, cb) {
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   for(var i=0; i<array.length; i++){
     cb(array[i]);
-  }
+  };
+  return;
 }
 
 // ¿Porque en el anterior ejercicio no se retorna cb(elemento) y en este si?

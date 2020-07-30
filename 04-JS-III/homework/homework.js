@@ -65,23 +65,17 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for(var i = 0; i < array.length; i++){
-    if(array[i] === elemento){
-      return true;
-    }
-  }
-    return false;
+  return array.includes(elemento);
 }
 
 function agregarNumeros(numeros) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  var suma = 0;
-  for(var i = 0; i < numeros.length; i++){
-    suma += numeros[i];
-  }
-  return suma;
+   var suma = numeros.reduce(function(acc, n){
+      return acc + n;
+   });
+   return suma;
 }
 
 function promedioResultadosTest(resultadosTest) {
